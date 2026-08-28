@@ -137,6 +137,13 @@ img{max-width:100%}
 .included-grid span{display:block;margin-top:17px;color:var(--coral);font-size:9px;font-weight:900;letter-spacing:.14em}
 .included-grid h3{margin:7px 0 8px;color:var(--ink);font:21px/1.15 Georgia,serif}
 .included-grid p{margin:0;color:#68766f;font-size:13px;line-height:1.55}
+.product-page-card figcaption{padding:18px 10px 10px;text-align:left;font-family:Arial,sans-serif}
+.product-page-card figcaption small{display:block;margin-bottom:7px;color:var(--coral);font-size:9px;font-weight:900;letter-spacing:.14em}
+.product-page-card figcaption h3{margin:0 0 8px;color:var(--ink);font:22px/1.15 Georgia,serif}
+.product-page-card figcaption p{margin:0;color:#68766f;font-size:13px;line-height:1.55}
+.included-grid article{padding:24px 18px 26px}
+.included-icon{display:grid;width:52px;height:52px;margin:0 auto 15px;place-items:center;border-radius:50%;background:#e7efe5;color:var(--sage);font:700 20px Georgia,serif}
+.included-grid span{margin-top:0}
 
 @media(max-width:900px){
   .method-showcase{grid-template-columns:1fr;max-width:650px}
@@ -166,6 +173,7 @@ img{max-width:100%}
   .included-grid p{font-size:11px}
   .fit-checklist p{text-align:center}
 }
+@media(max-width:560px){.included-grid{grid-template-columns:1fr}.included-grid article{padding:23px 18px}.product-page-card figcaption{padding:16px 10px 9px}.product-page-card figcaption h3{font-size:21px}.product-page-card figcaption p{font-size:13px}}
 
 /* Exact conversion flow adapted from the reference page */
 .hero-proof{display:block;margin-top:12px;color:var(--sage);font-size:10px;font-weight:900;letter-spacing:.12em}
