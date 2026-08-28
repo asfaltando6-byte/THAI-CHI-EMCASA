@@ -104,3 +104,11 @@ img{max-width:100%}
 .offer-mockup-box{width:min(88%,520px);margin:24px auto 0;padding:18px;border:1px solid #ffffff24;border-radius:18px;background:linear-gradient(145deg,#ffffff12,#ffffff07);overflow:hidden;box-shadow:0 20px 45px #06140f38}
 .offer-mockup-box img{display:block;width:88%;height:auto;margin:auto;filter:drop-shadow(0 16px 20px #06140f4a)}
 @media(max-width:560px){.offer-mockup-box{width:min(92%,430px);margin-top:18px;padding:12px;border-radius:14px}.offer-mockup-box img{width:86%}}
+
+/* Hero benefits below the CTA */
+.hero-head>.cta{margin-top:10px}
+.hero-head .hero-benefits{grid-template-columns:repeat(3,minmax(0,1fr));max-width:900px;margin:25px auto 0}
+.hero-head .hero-benefits span{display:flex;min-height:92px;flex-direction:column;justify-content:center;text-align:center}
+.hero-head .hero-benefits b{font-size:14px}
+.hero-head .hero-benefits small{font-size:11px;line-height:1.5}
+@media(max-width:700px){.hero-head .hero-benefits{grid-template-columns:1fr;max-width:470px;gap:9px}.hero-head .hero-benefits span{min-height:auto;padding:14px 16px;text-align:center}}
