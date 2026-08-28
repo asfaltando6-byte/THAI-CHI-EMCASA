@@ -99,3 +99,8 @@ img{max-width:100%}
   .top{padding-inline:10px}
   .price strong{font-size:46px}
 }
+
+/* Offer mockup contained and visually balanced */
+.offer-mockup-box{width:min(88%,520px);margin:24px auto 0;padding:18px;border:1px solid #ffffff24;border-radius:18px;background:linear-gradient(145deg,#ffffff12,#ffffff07);overflow:hidden;box-shadow:0 20px 45px #06140f38}
+.offer-mockup-box img{display:block;width:88%;height:auto;margin:auto;filter:drop-shadow(0 16px 20px #06140f4a)}
+@media(max-width:560px){.offer-mockup-box{width:min(92%,430px);margin-top:18px;padding:12px;border-radius:14px}.offer-mockup-box img{width:86%}}
