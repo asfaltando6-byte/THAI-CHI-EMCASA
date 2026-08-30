@@ -35,3 +35,26 @@ body.upgrade-open{overflow:hidden}.upgrade-modal[hidden]{display:none}.upgrade-m
 /* Larger, clearer Premium dialog typography */
 .upgrade-dialog{width:min(620px,100%);padding-right:38px;padding-left:38px}.upgrade-topline{margin-right:-38px;margin-left:-38px;padding-left:26px}.upgrade-topline span{font-size:10px}.upgrade-topline b{font-size:9px}.upgrade-dialog h2{max-width:540px;font-size:40px;line-height:1.08}.upgrade-lead{max-width:500px;font-size:14px;line-height:1.55}.upgrade-extras{gap:10px}.upgrade-extras article{grid-template-columns:40px 1fr;gap:13px;padding:13px 15px}.upgrade-extras article>b{width:38px;height:38px;font-size:10px}.upgrade-extras strong{font-size:13px;line-height:1.3}.upgrade-extras span{margin-top:4px;font-size:10px;line-height:1.45}.upgrade-price{padding:13px 16px}.upgrade-price small{font-size:10px}.upgrade-price strong{font-size:39px}.upgrade-price strong i{font-size:15px}.upgrade-price span{font-size:9px}.whatsapp-delivery{gap:4px;padding:12px 14px}.whatsapp-delivery b{font-size:11px}.whatsapp-delivery span{font-size:10px;line-height:1.45}.upgrade-yes{font-size:12px;line-height:1.25}.upgrade-no{display:flex;min-height:47px;justify-content:center;align-items:center;margin:18px auto 13px;padding:12px 16px;border:1px solid #cfdbd4;border-radius:9px;background:#fff;color:#40564c;font-size:11px;font-weight:800;text-align:center;text-decoration:none;box-shadow:0 7px 18px #173a2b12}.upgrade-no:hover{border-color:#9fb8aa;background:#fbfdfc}.upgrade-dialog>small{font-size:9px}
 @media(max-width:600px){.upgrade-dialog{padding-right:17px;padding-left:17px}.upgrade-topline{margin-right:-17px;margin-left:-17px;padding-left:17px}.upgrade-topline span{font-size:9px}.upgrade-topline b{font-size:8px}.upgrade-dialog h2{font-size:30px;line-height:1.1}.upgrade-lead{font-size:12.5px;line-height:1.5}.upgrade-extras article{grid-template-columns:34px 1fr;gap:10px;padding:10px}.upgrade-extras article>b{width:32px;height:32px}.upgrade-extras strong{font-size:11.5px}.upgrade-extras span{font-size:9px}.upgrade-price small{font-size:9px}.upgrade-price strong{font-size:32px}.whatsapp-delivery b{font-size:9.5px}.whatsapp-delivery span{font-size:9px}.upgrade-yes{font-size:10px;padding:16px 9px}.upgrade-no{min-height:44px;font-size:10px;padding:11px 12px}.upgrade-dialog>small{font-size:8px}}
+
+/* Final readable Montserrat scale for Premium dialog */
+.upgrade-dialog,.upgrade-dialog *{font-family:Montserrat,Arial,sans-serif}
+.upgrade-dialog{width:min(660px,100%);max-height:calc(100dvh - 24px);overflow-y:auto}
+.upgrade-topline{flex-wrap:wrap;align-items:center}
+.upgrade-topline span{font-size:12px}
+.upgrade-topline b{font-size:11px}
+.upgrade-dialog h2{max-width:570px;font-size:44px;line-height:1.08}
+.upgrade-lead{font-size:16px;line-height:1.6}
+.upgrade-extras article{grid-template-columns:44px 1fr;gap:14px;padding:15px 16px}
+.upgrade-extras article>b{width:42px;height:42px;font-size:11px}
+.upgrade-extras strong{font-size:15px}
+.upgrade-extras span{font-size:12px;line-height:1.5}
+.upgrade-price small{font-size:12px}
+.upgrade-price strong{font-size:43px}
+.upgrade-price strong i{font-size:16px}
+.upgrade-price span{font-size:10px}
+.whatsapp-delivery b{font-size:13px}
+.whatsapp-delivery span{font-size:12px;line-height:1.5}
+.upgrade-yes{font-size:14px}
+.upgrade-no{font-size:13px}
+.upgrade-dialog>small{font-size:10px}
+@media(max-width:600px){.upgrade-dialog{max-height:calc(100dvh - 16px);padding-right:17px;padding-left:17px}.upgrade-topline span{font-size:10.5px}.upgrade-topline b{font-size:9.5px}.upgrade-dialog h2{font-size:34px;line-height:1.1}.upgrade-lead{font-size:14px;line-height:1.55}.upgrade-extras article{grid-template-columns:38px 1fr;gap:11px;padding:11px}.upgrade-extras article>b{width:36px;height:36px;font-size:10px}.upgrade-extras strong{font-size:13px}.upgrade-extras span{font-size:11px;line-height:1.45}.upgrade-price small{font-size:10.5px}.upgrade-price strong{font-size:36px}.upgrade-price strong i{font-size:14px}.upgrade-price span{font-size:9.5px}.whatsapp-delivery b{font-size:11px}.whatsapp-delivery span{font-size:10.5px}.upgrade-yes{font-size:12px}.upgrade-no{font-size:11.5px}.upgrade-dialog>small{font-size:9px}}
