@@ -58,3 +58,38 @@ body.upgrade-open{overflow:hidden}.upgrade-modal[hidden]{display:none}.upgrade-m
 .upgrade-no{font-size:13px}
 .upgrade-dialog>small{font-size:10px}
 @media(max-width:600px){.upgrade-dialog{max-height:calc(100dvh - 16px);padding-right:17px;padding-left:17px}.upgrade-topline span{font-size:10.5px}.upgrade-topline b{font-size:9.5px}.upgrade-dialog h2{font-size:34px;line-height:1.1}.upgrade-lead{font-size:14px;line-height:1.55}.upgrade-extras article{grid-template-columns:38px 1fr;gap:11px;padding:11px}.upgrade-extras article>b{width:36px;height:36px;font-size:10px}.upgrade-extras strong{font-size:13px}.upgrade-extras span{font-size:11px;line-height:1.45}.upgrade-price small{font-size:10.5px}.upgrade-price strong{font-size:36px}.upgrade-price strong i{font-size:14px}.upgrade-price span{font-size:9.5px}.whatsapp-delivery b{font-size:11px}.whatsapp-delivery span{font-size:10.5px}.upgrade-yes{font-size:12px}.upgrade-no{font-size:11.5px}.upgrade-dialog>small{font-size:9px}}
+
+
+/* Cuidador edition: dual product carousels, stronger identification and compact modal */
+.samples .heading{margin-bottom:24px}
+.samples .sample-row{margin-top:16px}
+.samples .sample-row + .sample-row{margin-top:18px}
+.samples .carousel{grid-auto-columns:calc((100% - 48px)/4);gap:16px;padding:6px 2px 12px}
+.samples .sample-card{border-radius:15px;box-shadow:0 14px 30px #173a2b16}
+.samples .sample-card .sheet{position:relative;min-height:0;margin:0;padding:0;border:0;border-radius:15px;overflow:hidden}
+.samples .sample-card .sheet-tag{position:absolute;z-index:4;top:10px;left:10px;box-shadow:0 4px 12px #173a2b1f}
+.samples .sample-card .activity-visual{margin:0;border-radius:15px;box-shadow:none}
+.samples .carousel-arrow{top:50%;transform:translateY(-50%)}
+.caregiver-grid{grid-template-columns:repeat(4,minmax(0,1fr));max-width:1120px}
+.caregiver-grid article{padding:27px 23px}
+.caregiver-grid .audience-icon{width:54px;height:54px;font-size:23px}
+.caregiver-grid .audience-kicker{display:block;margin-top:18px;color:var(--orange);font-size:8px;font-weight:900;letter-spacing:.12em}
+.caregiver-grid h3{margin-top:8px;font-size:20px;line-height:1.2}
+.caregiver-grid p{font-size:12px;line-height:1.65}
+.upgrade-modal{padding:14px}
+.upgrade-dialog{width:min(430px,calc(100vw - 28px));min-height:430px;max-height:calc(100dvh - 28px);padding:0 22px 20px;border:2px solid #efc367;border-radius:18px;overflow-y:auto;background:radial-gradient(circle at 90% 0,#fff2c9 0,transparent 32%),linear-gradient(155deg,#fff,#fff9ed)}
+.upgrade-topline{margin:0 -22px 16px;padding:12px 52px 12px 22px;border-radius:16px 16px 0 0}
+.upgrade-topline span{font-size:10px}
+.upgrade-topline b{font-size:9px}
+.upgrade-dialog h2{max-width:350px;margin:0 auto 8px;font-size:29px;line-height:1.08}
+.upgrade-lead{margin-bottom:12px;font-size:13px;line-height:1.45}
+.upgrade-list{gap:7px;margin-bottom:12px;padding:12px 14px;font-size:12px;line-height:1.35}
+.upgrade-price{margin-bottom:12px;padding:10px 14px}
+.upgrade-price small{font-size:10px}
+.upgrade-price strong{font-size:36px}
+.upgrade-price strong i{font-size:14px}
+.upgrade-price span{font-size:9px}
+.upgrade-yes{padding:14px 12px;font-size:11px}
+.upgrade-no{min-height:40px;margin:14px auto 0;padding:10px 12px;border:1px solid #d8e1dc;border-radius:8px;background:#fff;color:#42584e;font-size:9.5px;text-decoration:none;box-shadow:0 6px 15px #173a2b12}
+@media(max-width:900px){.samples .carousel{grid-auto-columns:calc((100% - 32px)/3)}.caregiver-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.samples .heading{margin-bottom:16px}.samples .carousel{grid-auto-columns:82%;gap:12px}.samples .carousel-arrow{display:none}.caregiver-grid{grid-template-columns:1fr}.caregiver-grid article{padding:24px 21px}.upgrade-dialog{width:min(390px,calc(100vw - 20px));min-height:0;max-height:calc(100dvh - 20px);padding:0 17px 16px}.upgrade-topline{margin:0 -17px 13px;padding:11px 48px 11px 17px}.upgrade-dialog h2{font-size:26px}.upgrade-lead{font-size:12px}.upgrade-list{font-size:11px}.upgrade-price strong{font-size:32px}.upgrade-yes{font-size:10px}.upgrade-no{font-size:9px}}
