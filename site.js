@@ -7,8 +7,25 @@ const setupCarousel=({id,prevSelector,nextSelector,delay=3600})=>{
   document.querySelector(nextSelector)?.addEventListener('click',next);
   window.setInterval(next,delay);
 };
-setupCarousel({id:'productCarouselTop',prevSelector:'.top-prev',nextSelector:'.top-next',delay:3300});
-setupCarousel({id:'productCarouselBottom',prevSelector:'.bottom-prev',nextSelector:'.bottom-next',delay:4100});
+const samplesSection=document.querySelector('.samples');
+let sampleMediaReady=false;
+const enableSampleMedia=()=>{
+  if(sampleMediaReady||!samplesSection)return;
+  sampleMediaReady=true;
+  samplesSection.classList.add('media-ready');
+  setupCarousel({id:'productCarouselTop',prevSelector:'.top-prev',nextSelector:'.top-next',delay:3300});
+  setupCarousel({id:'productCarouselBottom',prevSelector:'.bottom-prev',nextSelector:'.bottom-next',delay:4100});
+};
+if(samplesSection){
+  if('IntersectionObserver'in window){
+    const sampleObserver=new IntersectionObserver(entries=>{
+      if(entries.some(entry=>entry.isIntersecting)){enableSampleMedia();sampleObserver.disconnect()}
+    },{rootMargin:'600px 0px'});
+    sampleObserver.observe(samplesSection);
+  }else{window.addEventListener('load',enableSampleMedia,{once:true})}
+  const runWhenIdle=window.requestIdleCallback||((callback)=>setTimeout(callback,1600));
+  runWhenIdle(enableSampleMedia,{timeout:2400});
+}
 
 const upgradeModal=document.getElementById('upgradeModal');
 const upgradeDialog=upgradeModal?.querySelector('.upgrade-dialog');
